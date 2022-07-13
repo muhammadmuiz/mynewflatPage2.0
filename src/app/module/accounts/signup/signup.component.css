@@ -1,0 +1,147 @@
+#sec1 {
+  background-image: url(/assets/images/cover.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sec1 .pop-up {
+  height: 700px;
+  width: 400px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#sec1 .pop-up .account {
+  color: rgb(114, 114, 114);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#sec1 .pop-up form {
+  margin: 5px 0;
+  /* text-align: center; */
+}
+
+#sec1 .pop-up form .btn {
+  width: 270px;
+  background-color: #333;
+  margin-top: 10px;
+}
+
+#sec1 .pop-up form .form-group {
+  margin: 5px 0;
+}
+#sec1 .pop-up form .row {
+  width: 294px;
+  /* margin: 0 auto; */
+}
+#sec1 .pop-up form .row .col input {
+  /* width: 85%; */
+}
+#sec1 .pop-up form .form-group input {
+  width: 270px;
+}
+#sec1 .pop-up h2 {
+  font-size: 24px;
+}
+
+#sec1 .pop-up .login-short-cuts {
+  margin: 10px;
+  font-size: 15px;
+}
+
+#sec1 .pop-up .login-short-cuts .google {
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 270px;
+  margin: 10px 0;
+  border-radius: 5px;
+  padding: 7px 40px;
+}
+#sec1 .pop-up .login-short-cuts .google a {
+  text-decoration: none;
+  color: #333;
+}
+
+#sec1 .pop-up .login-short-cuts .facebook {
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 270px;
+  padding: 0 40px;
+  padding: 7px 40px;
+  border-radius: 5px;
+}
+#sec1 .pop-up .login-short-cuts .facebook a {
+  text-decoration: none;
+  color: #333;
+}
+#sec1 .pop-up .new {
+  font-size: 15px;
+  margin-top: 10px;
+}
+#sec1 .pop-up .new a {
+  text-decoration: none;
+  font-weight: 500;
+}
+#sec1 .pop-up .new1 {
+  font-size: 15px;
+  margin-top: 5px;
+}
+#sec1 .pop-up .new1 a {
+  text-decoration: none;
+  font-weight: 500;
+}
+#sec1 .pop-up .extras {
+  font-size: 13px;
+  width: 270px;
+  line-height: 1.3;
+  color: #777;
+}
+
+#sec1 .pop-up .extras .error {
+  font-size: 13px;
+  color: #666;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.common.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+.common.ng-valid.ng-touched {
+  border: 1px solid green;
+}
+
+.lname.ng-invalid.ng-touched {
+}
+.lname.ng-valid.ng-touched {
+}
+
+.password.ng-invalid.ng-touched.ng-errors {
+  border: 1px solid red;
+}
+.password.ng-valid.ng-touched {
+  border: 1px solid green;
+}
+
+.bordered {
+  border: 1px solid red;
+}
+.not_bordered {
+  border: 1px solid green;
+}

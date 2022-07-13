@@ -1,0 +1,205 @@
+
+    <!-- Navbar -->
+    <nav id="sec1">
+      <div class="content">
+        <div class="links">
+          <ul>
+            <li>
+              <a href="#"><i class="fas fa-chevron-left"></i></a>
+            </li>
+            <li>
+              <a href="#" class="button">Publish</a>
+            </li>
+            <li>
+              <a href="#">
+                <div>
+                  <i class="fas fa-external-link-alt"></i>
+                  <p>Share</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div>
+                  <i class="far fa-question-circle"></i>
+                  <p>Help</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="avatar">
+          <a href="#"><img src="../../../../assets/images/men.jpg" alt="Logo" /></a>
+        </div>
+      </div>
+    </nav>
+    <!-- Main screen / Dashboard -->
+    <div id="sec2">
+      
+      <!-- float left.. -->
+      <div class="components">
+        <a href="#">
+          <div class="tutorial">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <p>Tutorial</p>
+          </div>
+        </a>
+        <a (click) = 'text()'>
+          <div>
+            <i class="fas fa-text-height"></i>
+            <p>Text</p>
+          </div>
+        </a>
+        <a href="">
+          <div>
+            <i class="fas fa-shapes"></i>
+            <p>Shapes</p>
+          </div>
+        </a>
+        <a href="">
+          <div>
+            <i class="fas fa-book"></i>
+            <p>Themes</p>
+          </div>
+        </a>
+        <a href="">
+          <div>
+            <i class="fas fa-image"></i>
+            <p>Picture</p>
+          </div>
+        </a>
+        <a href="">
+          <div>
+            <i class="fas fa-cloud-upload-alt"></i>
+            <p>Upload</p>
+          </div>
+        </a>
+        <a (click) = 'backgroundColor()'>
+          <div>
+            <i class="fas fa-paint-roller"></i>
+            <p>Fill</p>
+          </div>
+        </a>
+        <a href="">
+          <div>
+            <i class="far fa-object-group"></i>
+            <p>Assets</p>
+          </div>
+        </a>
+        <a href="">
+          <div class="bordernone">
+            <i class="fas fa-play"></i>
+            <p>Preview</p>
+          </div>
+        </a>
+      </div>
+      <!-- No float -->
+      <div class="page-screen">
+        <!-- <img src="images/avatar.png" alt="" /> -->
+        <div class="col-1">
+          <div class="row-1" #defaultPage>
+            <div class="default" >
+              <form [formGroup]="form"  *ngIf="viewTextualComp">
+
+              <ngx-editor [editor]="editor" formControlName="editorContent">
+              </ngx-editor>
+              </form>
+            </div>
+           
+          </div>
+          <div class="row-2">
+            <div class="col-1">
+              <div class="page">1</div>
+              <div class="page">2</div>
+              <div class="page">+</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="row-1">
+            <div class="book-cover">
+              <img src="../../../../assets/images/book-cover.JPG" alt="" />
+              </div>
+          </div>
+          <div class="row-2">
+            <div class="content">
+              <a href="#"><i class="fas fa-microphone"></i></a>
+              <p>00:00:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- float right -->
+      <div class="widgets">
+        <div class="profile-stats">
+          <h1>Project Name</h1>
+          <p>Created by: Muiz Ul Hassan</p>
+          <p class="time">2 Days ago</p>
+        </div>
+        <!-- <div class="cards">
+          <a href="#"
+            ><div class="card">
+              <div>
+                <i class="fas fa-globe-americas"></i>
+                <p>Select right Language</p>
+              </div>
+              <i class="fas fa-chevron-down"></i></div
+          ></a>
+          <a href="#"
+            ><div class="card">
+              <div>
+                <i class="fas fa-info-circle"></i>
+                <p>Typing Assistant</p>
+              </div>
+              <i class="fas fa-chevron-down"></i></div
+          ></a>
+          <a href="#"
+            ><div class="card">
+              <div>
+                <i class="fas fa-user-plus"></i>
+                <p>Invite People</p>
+              </div>
+              <i class="fas fa-chevron-down"></i></div
+          ></a>
+          <a href="#"
+            ><div class="card">
+              <div>
+                <i class="far fa-question-circle"></i>
+                <p>Ask a Question</p>
+              </div>
+              <i class="fas fa-chevron-down"></i></div
+          ></a>
+          <a href="#"
+            ><div class="card">
+              <div>
+                <i class="fas fa-layer-group"></i>
+                <p>Layers</p>
+              </div>
+              <i class="fas fa-chevron-down"></i></div
+          ></a>
+          <a href="#"
+            ><div class="card">
+              <div>
+                <i class="fas fa-history"></i>
+                <p>History</p>
+              </div>
+              <i class="fas fa-chevron-down"></i></div
+          ></a>
+          <a href="#"
+            ><div class="card">
+              <div>
+                <i class="fas fa-cog"></i>
+                <p>Settings</p>
+              </div>
+              <i class="fas fa-chevron-down"></i></div
+          ></a>
+        </div> -->
+        <form [formGroup]="form" *ngIf="viewTextualComp">
+          <ngx-editor-menu [editor]="editor" [toolbar]="toolbar" class="editor-menu">
+	  			</ngx-editor-menu>
+          </form> 
+          <div *ngIf="viewBgColorComp">
+            <input type="color" name="color-picker" id="colorpick" [(ngModel)]="color" (input)="updateColor($event)">
+          </div>
+      </div>
+    </div>

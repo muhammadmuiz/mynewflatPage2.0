@@ -1,0 +1,447 @@
+
+#sec1 {
+    background-color: #ea5b50;
+    min-height: 7.5vh;
+    box-shadow: rgba(233, 233, 233, 0.1) 0px 8px 24px;
+  }
+  
+  #sec1 .content {
+    margin: 0 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+  }
+  
+  #sec1 .content .links ul {
+    padding-bottom: 2px;
+  }
+  
+  #sec1 .content .links ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  
+  #sec1 .content .links ul li {
+    margin: 0 11px 0 0;
+  }
+  
+  #sec1 .content .links ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  #sec1 .content .links ul li .button {
+    background-color: #fff;
+    color: #222;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 10px 18px;
+    font-weight: 500;
+    margin: 0 17px 0 12px;
+  }
+  
+  #sec1 .content .links ul li a div {
+    display: flex;
+    align-items: center;
+  }
+  
+  #sec1 .content .links ul li a div i {
+    margin-right: 10px;
+    font-size: 12px;
+  }
+  #sec1 .content .links ul li a div p {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  #sec1 .content .avatar a img {
+    width: 42px;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  /* Media Queries Responsiveness => Navbar */
+  @media screen and (max-width: 1400px) {
+    #sec1 .content {
+      padding: 4px 0;
+    }
+  }
+  
+  @media screen and (max-width: 1014px) {
+    #sec1 .content {
+      padding: 5px 0 3px 0;
+    }
+    #sec1 .content .links ul li .button {
+      font-size: 13px;
+      padding: 9px 16px;
+      margin-bottom: 2px;
+    }
+  
+    #sec1 .content .avatar a img {
+      width: 38px;
+      padding-top: 2px;
+    }
+    #sec1 .content .links ul li a div i {
+      margin-right: 11px;
+      font-size: 11px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    #sec1 .content {
+      padding: 7px 0 5px 0;
+    }
+    #sec1 .content .links ul li .button {
+      font-size: 12px;
+      padding: 8px 15px;
+    }
+  
+    #sec1 .content .avatar a img {
+      width: 34px;
+    }
+    #sec1 .content .links ul li a div {
+      display: none;
+    }
+  
+    #sec1 .content .links ul li a i:first-of-type {
+      font-size: 90%;
+      margin-left: 7px;
+    }
+  }
+  
+  /* Main dashboard screen */
+  
+  #sec2 {
+    background-color: #edf0f2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  /* components */
+  #sec2 .components {
+    /* float: left; */
+    width: 72px;
+    background-color: #0e1318;
+    height: 92.5vh;
+    box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 12px;
+  
+    display: table;
+  }
+  
+  #sec2 .components a {
+    text-decoration: none;
+  }
+  
+  #sec2 .components a div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #272c31;
+    padding: 14px 0;
+    color: #9fa1a2;
+  }
+  
+  #sec2 .components a .tutorial {
+    background-color: #293039;
+    color: #f1f1f1;
+  }
+  
+  #sec2 .components a .tutorial p {
+    color: #f1f1f1;
+  }
+  
+  #sec2 .components a .bordernone {
+    border-bottom: none;
+  }
+  
+  #sec2 .components a div i {
+    font-size: 19px;
+    padding: 6px 0;
+  }
+  
+  #sec2 .components a div p {
+    font-size: 11px;
+    font-weight: 600;
+    color: #a2a4a6;
+  }
+  
+  #sec2 .components a div :hover {
+    color: rgb(233, 233, 233);
+  }
+  /* widgets */
+  #sec2 .widgets {
+    /* float: right; */
+    width: 315px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #f1f1f1;
+    /* height: 92.5vh; */
+  }
+  #sec2 .widgets .profile-stats {
+    display: flex;
+    flex-direction: column;
+    color: #444;
+    margin: 13px 5%;
+    padding: 14px 12px 50px 12px;
+  }
+  #sec2 .widgets .profile-stats h1 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  #sec2 .widgets .profile-stats p {
+    font-size: 15px;
+    color: #444;
+    padding-top: 6px;
+  }
+  #sec2 .widgets .profile-stats .time {
+    font-size: 12px;
+    color: #444;
+    font-style: italic;
+    padding-top: 5px;
+  }
+  #sec2 .widgets .cards a {
+    text-decoration: none;
+  }
+  
+  #sec2 .widgets .cards .card {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3px 5%;
+    padding: 14px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    border-bottom: 1px solid #dadada;
+  }
+  
+  #sec2 .widgets .cards .card i {
+    font-size: 10px;
+    color: #444;
+  }
+  
+  #sec2 .widgets .cards .card div {
+    display: flex;
+    align-items: center;
+  }
+  
+  #sec2 .widgets .cards .card div i {
+    margin-right: 15px;
+    font-size: 14px;
+    color: #444;
+  }
+  
+  #sec2 .widgets .cards .card div p {
+    color: #444;
+    font-size: 13px;
+  }
+  
+  /* Page screens ui */
+  #sec2 .page-screen {
+    width: 700px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  #sec2 .page-screen .col-1 {
+    width: 80%;
+    /* border: 1px solid tomato; */
+    margin-right: 20px;
+  }
+  
+  #sec2 .page-screen .col-1 .row-1 {
+    background-color: #fff;
+    height: 570px;
+    width: 520px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  }
+  #sec2 .page-screen .col-1 .row-1 .default {
+  }
+  #sec2 .page-screen .col-1 .row-1 .default p {
+  }
+  #sec2 .page-screen .col-1 .row-2 {
+    margin-top: 10px;
+  }
+  #sec2 .page-screen .col-1 .row-2 .col-1 {
+    display: flex;
+  }
+  #sec2 .page-screen .col-1 .row-2 .col-1 .page {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    color: #666;
+    font-weight: 600;
+  }
+  
+  #sec2 .page-screen .col-2 {
+    width: 20%;
+    margin: 0 auto;
+  }
+  #sec2 .page-screen .col-2 .row-1 .book-cover {
+    display: flex;
+    justify-content: center;
+  }
+  #sec2 .page-screen .col-2 .row-1 .book-cover img {
+    width: 100px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    border-radius: 4px;
+  }
+  #sec2 .page-screen .col-2 .row-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  #sec2 .page-screen .col-2 .row-2 .content {
+    text-align: center;
+    color: #666;
+    background-color: rgb(245, 244, 244);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgba(240, 240, 240, 0.2) 0px 8px 24px;
+  }
+  #sec2 .page-screen .col-2 .row-2 .content a {
+    text-decoration: none;
+    color: #ea5b50;
+  }
+  #sec2 .page-screen .col-2 .row-2 .content i {
+    background-color: rgb(245, 244, 244);
+    padding: 10px;
+    font-size: 30px;
+    /* padding-top: 12px; */
+  }
+  
+  #sec2 .page-screen .col-2 .row-2 .content p {
+    font-size: 12px;
+    color: #858585;
+    padding-bottom: 12px;
+  }
+  /* Responsive in main dashboard via media queries */
+  @media screen and (max-width: 1400px) {
+    /* for components */
+    #sec2 .components {
+      width: 70px;
+    }
+  
+    #sec2 .components a div {
+      padding: 13px 0;
+    }
+  
+    #sec2 .components a div i {
+      font-size: 18px;
+      padding: 5px 0;
+    }
+    /* For widgets */
+  
+    #sec2 .widgets .profile-stats {
+      margin: 12px 5%;
+      padding: 13px 11px 48px 11px;
+    }
+    #sec2 .widgets .profile-stats h1 {
+      font-size: 23px;
+    }
+    #sec2 .widgets .profile-stats p {
+      font-size: 14px;
+      padding-top: 5px;
+    }
+    #sec2 .widgets .profile-stats .time {
+      font-size: 11px;
+      padding-top: 4px;
+    }
+  
+    #sec2 .widgets .cards .card {
+      margin: 2.5px 4.5%;
+      padding: 13px 11px;
+      border-radius: 7px;
+      font-size: 11px;
+    }
+  
+    #sec2 .widgets .cards .card i {
+      font-size: 9px;
+    }
+  
+    #sec2 .widgets .cards .card div i {
+      margin-right: 14px;
+      font-size: 13px;
+    }
+  
+    #sec2 .widgets .cards .card div p {
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 1014px) {
+    /* for components */
+    #sec2 .components {
+      width: 68px;
+    }
+  
+    #sec2 .components a div {
+      padding: 12px 0;
+    }
+  
+    #sec2 .components a div i {
+      font-size: 17px;
+      padding: 4.5px 0;
+    }
+    /* For widgets */
+    #sec2 .widgets {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    /* for components */
+    #sec2 .components {
+      width: 66px;
+    }
+  
+    #sec2 .components a div {
+      padding: 11px 0;
+    }
+  
+    #sec2 .components a div i {
+      font-size: 16px;
+      padding: 4px 0;
+    }
+  }
+  /*000000000000000*/
+
+  /* NGX EDITOR SETTINGS CONFIGURATION */
+  #sec2 .widgets .NgxEditor__MenuBar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-gap: 15px;
+    margin: 12px 5%;
+    background-color: #f1f1f1;
+    grid-template-areas:
+    "h . ."
+    ". . ."
+    ". . .";
+  }
+
+  #sec2 .widgets .NgxEditor__MenuItem  .NgxEditor__MenuItem--Icon .NgxEditor__MenuItem--IconContainer {
+    margin: 10px;
+  }
+
+  #sec2 .widgets .NgxEditor__MenuItem  .NgxEditor__MenuItem--Icon .NgxEditor__MenuItem--IconContainer svg:first-child{
+    grid-area: h;
+    color: rgb(213, 88, 109);
+  }
+
+  #sec2 .page-screen .col-1 .row-1 .default .NgxEditor {
+    max-height: 570px;
+    overflow: hidden;
+  }
